@@ -120,7 +120,7 @@ li.arr2 {
 
 
 li.arr::before {
-    content: url(../img/1-4_03);
+    content: url(../img/1-4_03.png);
     position: absolute;
     top: -21%;
     left: 77.8%;
@@ -128,7 +128,7 @@ li.arr::before {
 }
 
 li.arr2::after {
-    content: url(../img/1-4_07);
+    content: url(../img/1-4_07.png);
     position: absolute;
     bottom: -78%;
     right: -1%;
