@@ -87,7 +87,6 @@
 
 <body lang="en" class="inside">
 
-
     <!-- comboNav -->
 
     <input type="checkbox" id="main-nav-check" />
@@ -207,35 +206,22 @@
                                                 <div class="relative">
                                                     <form id="simple" name="searchForm" method="get" target="_blank" action="https://nccu.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" xonsubmit="searchPrimo()">
 
-                                                        <!-- Customizable Parameters -->
+                                                        <!-- 搜尋設定範圍參數-跟飛資得窗口要 -->
 
+                                                        <input type="hidden" name="mfacet" value="location_code,include,5721–112037580005721–dhlzc,1">
+                                                        <input type="hidden" name="mfacet" value="library,include,5721–112037580005721,2">
+                                                        <input type="hidden" name="mfacet" value="location_code,include,5721–112037580005721–dhlzp4,1">
+                                                        <input type="hidden" name="mfacet" value="location_code,include,5721–112037580005721–dhlte,1">
+
+
+                                                        <input type="hidden" id="primoQuery" name="query" value="">
+                                                        <input type="hidden" name="tab" value="LibraryCatalog">
+                                                        <input type="hidden" name="search_scope" value="MyInstitution">
                                                         <input type="hidden" name="vid" value="886NCCU_INST:886NCCU_INST">
+                                                        <input type="hidden" name="hide" value="1">
+                                                        <input type="text" id="primoQueryTemp" class="content_text1" placeholder="請輸入">
 
-                                                        <input type="hidden" name="tab" value="NCCU_SP">
 
-                                                        <input type="hidden" name="search_scope" value="NCCU_SP">
-
-                                                        <input type="hidden" name="mode" value="basic">
-
-                                                        <!-- Fixed parameters -->
-
-                                                        <input type="hidden" name="displayMode" value="full">
-
-                                                        <input type="hidden" name="bulkSize" value="10">
-
-                                                        <input type="hidden" name="highlight" value="true">
-
-                                                        <input type="hidden" name="dum" value="true">
-
-                                                        <input type="hidden" name="query" id="primoQuery">
-
-                                                        <input type="hidden" name="displayField" value="all">
-
-                                                        <!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
-
-                                                        <input type="hidden" name="pcAvailabiltyMode" value="true">
-
-                                                        <input type="text" class="content_text1" id="primoQueryTemp" value="" placeholder="請輸入">
 
                                                         <!-- Search Button -->
 
@@ -253,7 +239,7 @@
                                         <li>
                                             <p class="fs">
 
-                                                ※查詢本館特藏圖書館藏(1949年以前的中文資料、西元1911年以前的西文資料、昭和20年以前的日文資料)。
+                                                ※查詢本館特藏圖書館藏。
                                             </p>
 
                                         </li>
@@ -270,7 +256,7 @@
 
                         <div class="one">
                             <div class="info">
-                                <strong>特藏史料文物查詢
+                                <strong>特藏文物史料查詢
                                 </strong>
                             </div>
                             <div class="description wid1 search">
@@ -299,12 +285,12 @@
                                         <li>
                                             <p class="fs">
 
-                                                ※查詢本館特藏史料文物(含手稿、書信、剪報…等)。特藏文物史料限館內閱覽，若需調閱請洽特藏管理組。
+                                                ※查詢本館特藏文物史料，不含圖書。
 
                                             </p>
                                             <p class="fs">
 
-                                                ※不含圖書。
+                                                ※特藏文物史料限館內閱覽，若需調閱請洽特藏管理組。
 
                                             </p>
 
